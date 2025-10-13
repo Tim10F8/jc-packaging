@@ -44,7 +44,7 @@ mkdir -p linux/usr/local/bin
 cp "${BIN_PATH}" linux/usr/local/bin
 tar -xvf "linux/usr/local/bin/${NAME}-${VERSION}-linux-${ARCH}.tar.gz" -C linux/usr/local/bin/
 rm linux/usr/local/bin/*.tar.gz
-chmod +x "linux/usr/local/bin/${NAME}"
+chmod 755 "linux/usr/local/bin/${NAME}"
 
 # download man page for this version (version must be tagged in github)
 mkdir -p linux/usr/share/man/man1
